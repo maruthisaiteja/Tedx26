@@ -164,7 +164,7 @@ const pastSpeakers = [
     talkTitle: 'Diving Past the Impossible: The Architecture of Adaptive Will',
     domain: 'Sports, Adaptive Resilience & Inclusion',
     category: 'Resilience',
-    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&auto=format&fit=crop&q=80',
     shortBio: 'Former national karate champion who triumphed over paraplegia to become a world-ranked international para-swimming champion.',
     visitSummary: 'Shams Aalam electrified the TEDxVCE audience at Vardhaman College of Engineering with his raw narrative of overcoming a spinal tumor at age 24, conquering open seas, and holding the Limca record for longest open-water sea swimming by a para-athlete.',
     workImpact: 'International medalist at the World Para Swimming World Series, Limca Book of Records holder, recipient of national awards for disability empowerment, and global speaker on universal design.',
@@ -401,14 +401,14 @@ function renderPastSpeakers(list) {
     <div class="speaker-card bg-surface-2 border border-surface-5 hover:border-surface-6 rounded-2xl p-6 flex flex-col justify-between group">
       <div>
         <!-- TOP META: EDITION & VISIT DATE -->
-        <div class="flex items-center justify-between mb-4">
-          <span class="text-[11px] font-mono font-semibold bg-surface-4 text-textpalette-beige px-2.5 py-1 rounded-md flex items-center gap-1">
+        <div class="flex items-center justify-between gap-2 mb-4">
+          <span class="text-[11px] font-mono font-semibold bg-surface-4 text-textpalette-beige px-2.5 py-1 rounded-md flex items-center gap-1 whitespace-nowrap shrink-0">
             <span class="w-1.5 h-1.5 rounded-full bg-ted-red"></span>
-            <span>TEDxVCE Stage Alumni</span>
+            <span>TEDxVCE Alumni</span>
           </span>
-          <div class="text-[11px] text-textpalette-brownlight flex items-center gap-1">
+          <div class="text-[11px] text-textpalette-brownlight flex items-center gap-1 min-w-0">
             <svg class="w-3.5 h-3.5 text-ted-red shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
-            <span class="line-clamp-1">${sp.dateVisited}</span>
+            <span class="truncate">${sp.dateVisited}</span>
           </div>
         </div>
 
