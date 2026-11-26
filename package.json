@@ -1,0 +1,19 @@
+{
+  "name": "tedxvce",
+  "version": "1.0.0",
+  "description": "TEDxVCE Official Event Website - Vardhaman College of Engineering",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s .",
+    "build": "echo 'Static build ready'"
+  },
+  "keywords": [
+    "tedx",
+    "tedxvce",
+    "vardhaman",
+    "zoho-catalyst",
+    "slate"
+  ],
+  "author": "TEDxVCE Team",
+  "license": "ISC"
+}

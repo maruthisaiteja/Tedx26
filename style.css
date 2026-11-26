@@ -1,0 +1,116 @@
+/* TEDxVardhaman Custom Aesthetic Styles */
+
+@layer base {
+  html {
+    font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+    background-color: #000000;
+    color: #F5EFEB;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Custom Focus Ring for Accessibility */
+  *:focus-visible {
+    outline: 2px solid #EB0028;
+    outline-offset: 3px;
+  }
+}
+
+/* Base curve defined in B7 */
+:root {
+  --ease-ted: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Tagline Reveal Word Animation (B11) */
+.reveal-word {
+  opacity: 0.28;
+  color: #D4C3B3;
+  transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1), color 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  display: inline-block;
+  will-change: opacity, color;
+}
+
+.reveal-word.revealed {
+  opacity: 1;
+  color: #FFFFFF;
+}
+
+.reveal-word.text-ted-red.revealed {
+  color: #EB0028 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-word {
+    opacity: 1 !important;
+    color: #FFFFFF !important;
+    transition: none !important;
+  }
+  .reveal-word.text-ted-red {
+    color: #EB0028 !important;
+  }
+}
+
+/* Speaker Card & Grid Interactions */
+.speaker-card {
+  transition: transform 0.4s var(--ease-ted), border-color 0.4s var(--ease-ted), box-shadow 0.4s var(--ease-ted);
+}
+
+.speaker-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.7), 0 0 25px 2px rgba(235, 0, 40, 0.12);
+}
+
+/* Custom Dark Scrollbars for TEDx Theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #272727;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #EB0028;
+}
+
+/* Custom Scrollbar for Year Filters & Modal */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Animated Stage Glow Pulse */
+@keyframes stage-pulse {
+  0%, 100% {
+    opacity: 0.25;
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: translateX(-50%) scale(1.08);
+  }
+}
+
+.stage-glow-active {
+  animation: stage-pulse 6s ease-in-out infinite;
+}
+
+/* Button Physical Feedback (B9) */
+button:active, a.button:active {
+  transform: scale(0.98);
+}

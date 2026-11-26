@@ -1,0 +1,11 @@
+{
+  "client": {
+    "source": "."
+  },
+  "slate": [
+    {
+      "name": "tedxvce",
+      "source": "."
+    }
+  ]
+}

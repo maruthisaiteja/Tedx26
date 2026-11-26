@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEDxVardhaman | Catalysts of Conviction | Dec 2, 2026</title>
+  <meta name="description" content="TEDxVardhaman at Vardhaman College of Engineering, Hyderabad on December 2, 2026. Featuring keynote speakers Ashneer Grover, Peyush Bansal, Ghazal Alagh, and leading innovators.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            ted: {
+              red: '#EB0028',
+              darkred: '#B8001F',
+              glow: 'rgba(235, 0, 40, 0.18)'
+            },
+            surface: {
+              0: '#000000',
+              1: '#0D0D0D',
+              2: '#141414',
+              3: '#181818',
+              4: '#1F1F1F',
+              5: '#272727',
+              6: '#313131'
+            },
+            textpalette: {
+              white: '#FFFFFF',
+              chalk: '#F9F8F6',
+              beigelight: '#F5EFEB',
+              beige: '#EADBCE',
+              beigemuted: '#D4C3B3',
+              sand: '#C5B2A0',
+              brownlight: '#A88B73',
+              brown: '#8C6D58',
+              browndeep: '#5A4335',
+              espresso: '#382A21',
+              charcoal: '#1A1A1A',
+              black: '#0A0A0A'
+            }
+          },
+          fontFamily: {
+            sans: ['Manrope', 'system-ui', 'sans-serif'],
+            display: ['Manrope', 'sans-serif']
+          },
+          spacing: {
+            '25': '2px',
+            '50': '4px',
+            '75': '8px',
+            '100': '12px',
+            '200': '16px',
+            '300': '24px',
+            '400': '32px',
+            '500': '40px',
+            '600': '48px',
+            '700': '64px',
+            '800': '80px',
+            '900': '96px'
+          },
+          transitionTimingFunction: {
+            'ted': 'cubic-bezier(0.22, 1, 0.36, 1)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-surface-0 text-textpalette-beigelight font-sans antialiased selection:bg-ted-red selection:text-white min-h-screen overflow-x-hidden">
+
+  <!-- ACCESSIBILITY: SKIP LINK -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-50 bg-ted-red text-white px-4 py-2 rounded-lg font-medium">
+    Skip to main content
+  </a>
+
+  <!-- TOP AMBIENT STAGE LIGHTING -->
+  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-ted-red/10 blur-[130px] rounded-full pointer-events-none -z-10"></div>
+  <div class="fixed bottom-0 right-0 w-[500px] h-[400px] bg-textpalette-browndeep/10 blur-[150px] rounded-full pointer-events-none -z-10"></div>
+
+  <!-- FLOATING NAVIGATION BAR -->
+  <header class="fixed top-4 inset-x-0 z-40 flex justify-center px-4">
+    <nav class="w-full max-w-5xl bg-surface-3/90 backdrop-blur-md border border-surface-5/80 rounded-2xl px-4 py-2.5 flex items-center justify-between shadow-2xl transition-all duration-300">
+      <div class="flex items-center gap-3 shrink-0">
+        <a href="#" class="flex items-center group whitespace-nowrap" aria-label="TEDxVardhaman Home">
+          <span class="text-textpalette-white font-bold text-xl tracking-tight">TED<span class="text-ted-red font-black text-2xl inline-block transition-transform duration-300 group-hover:scale-110">x</span></span>
+          <span class="text-textpalette-beige font-semibold text-sm tracking-tight border-l border-surface-5 pl-2 ml-1.5">Vardhaman</span>
+        </a>
+      </div>
+
+      <!-- DESKTOP NAV LINKS -->
+      <div class="hidden lg:flex items-center gap-6 text-sm font-medium">
+        <a href="#theme" class="text-textpalette-beigemuted hover:text-textpalette-white transition-colors duration-200">Theme</a>
+        <a href="#present-speakers" class="text-textpalette-beigemuted hover:text-textpalette-white transition-colors duration-200 flex items-center gap-1.5">
+          <span>2026 Lineup</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-ted-red animate-pulse"></span>
+        </a>
+        <a href="#past-speakers" class="text-textpalette-beigemuted hover:text-textpalette-white transition-colors duration-200">Past Speakers</a>
+        <a href="#schedule" class="text-textpalette-beigemuted hover:text-textpalette-white transition-colors duration-200">Schedule</a>
+        <a href="#venue" class="text-textpalette-beigemuted hover:text-textpalette-white transition-colors duration-200">Campus</a>
+        <a href="#faq" class="text-textpalette-beigemuted hover:text-textpalette-white transition-colors duration-200">FAQ</a>
+      </div>
+
+      <!-- ACTION BUTTON -->
+      <div class="flex items-center gap-3 shrink-0">
+        <button id="open-pass-btn" class="bg-ted-red hover:bg-ted-darkred text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-300 ease-ted hover:shadow-lg hover:shadow-ted-red/25 active:scale-[0.98] flex items-center gap-2 whitespace-nowrap">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"></path>
+            <path d="M13 5v2"></path>
+            <path d="M13 17v2"></path>
+            <path d="M13 11v2"></path>
+          </svg>
+          <span>Reserve Pass</span>
+        </button>
+
+        <!-- MOBILE MENU BUTTON -->
+        <button id="mobile-menu-toggle" class="lg:hidden p-2 text-textpalette-beigemuted hover:text-textpalette-white rounded-lg focus:outline-none focus:ring-2 focus:ring-ted-red" aria-label="Toggle navigation menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE MENU PANEL -->
+  <div id="mobile-menu-panel" class="fixed inset-0 z-30 bg-surface-1/95 backdrop-blur-xl flex flex-col justify-center items-center px-6 transition-all duration-300 opacity-0 pointer-events-none">
+    <div class="flex flex-col items-center gap-6 text-xl font-medium text-center">
+      <a href="#theme" class="mobile-nav-link text-textpalette-beigelight hover:text-ted-red transition-colors">Theme & Legacy</a>
+      <a href="#present-speakers" class="mobile-nav-link text-textpalette-beigelight hover:text-ted-red transition-colors">2026 Keynote Speakers</a>
+      <a href="#past-speakers" class="mobile-nav-link text-textpalette-beigelight hover:text-ted-red transition-colors">Past Speaker Archives</a>
+      <a href="#schedule" class="mobile-nav-link text-textpalette-beigelight hover:text-ted-red transition-colors">Event Schedule</a>
+      <a href="#venue" class="mobile-nav-link text-textpalette-beigelight hover:text-ted-red transition-colors">Vardhaman Campus</a>
+      <a href="#faq" class="mobile-nav-link text-textpalette-beigelight hover:text-ted-red transition-colors">FAQ</a>
+      <button id="mobile-pass-btn" class="mt-4 bg-ted-red text-white px-6 py-3 rounded-xl font-semibold shadow-xl shadow-ted-red/30">
+        Reserve Your Pass
+      </button>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-[92vh] flex items-center justify-center pt-28 pb-16 px-4">
+      <!-- TED RED CARPET STAGE CIRCLE MOTIF -->
+      <div class="absolute bottom-4 left-1/2 -translate-x-1/2 w-[340px] md:w-[620px] h-[70px] md:h-[110px] bg-ted-red/25 rounded-full blur-[45px] pointer-events-none"></div>
+      <div class="absolute bottom-6 left-1/2 -translate-x-1/2 w-[220px] md:w-[380px] h-[36px] md:h-[50px] border border-ted-red/40 rounded-full bg-ted-red/10 pointer-events-none flex items-center justify-center">
+        <span class="text-xs uppercase tracking-widest text-textpalette-beigemuted font-medium">The Red Dot Stage</span>
+      </div>
+
+      <div class="max-w-4xl mx-auto text-center relative z-10 flex flex-col items-center">
+        
+        <!-- EVENT BADGE -->
+        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-3 border border-surface-5 shadow-inner mb-6">
+          <span class="w-2 h-2 rounded-full bg-ted-red animate-ping"></span>
+          <span class="text-xs md:text-sm font-semibold tracking-wide text-textpalette-beige">
+            December 2, 2026 • Vardhaman College of Engineering, Hyderabad
+          </span>
+        </div>
+
+        <!-- MAIN HERO HEADLINE (B5 CAPPED AT 680px WITH MEANINGFUL BREAK) -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-textpalette-white via-textpalette-chalk to-textpalette-sand max-w-[680px] leading-[1.1] mb-6">
+          Catalysts of Conviction: Ideas That Reshape Tomorrow
+        </h1>
+
+        <!-- SUBHEADLINE (CAPPED AT 680px) -->
+        <p class="text-base md:text-lg text-textpalette-beigemuted max-w-[680px] leading-relaxed mb-8">
+          Join 1,200 creators, entrepreneurs, and visionary engineers on December 2 at Vardhaman Auditorium for an unforgettable day of transformative talks and fearless discourse.
+        </p>
+
+        <!-- CTA BUTTONS -->
+        <div class="flex flex-col sm:flex-row items-center gap-4 mb-12">
+          <button id="hero-reserve-btn" class="w-full sm:w-auto bg-ted-red hover:bg-ted-darkred text-textpalette-white font-semibold text-base px-6 py-3 rounded-xl transition-all duration-300 ease-ted shadow-xl shadow-ted-red/25 hover:scale-[1.02] active:scale-[0.98]">
+            Claim Attendee Pass
+          </button>
+          <a href="#present-speakers" class="w-full sm:w-auto bg-surface-3 hover:bg-surface-4 border border-surface-5 text-textpalette-beige hover:text-textpalette-white font-medium text-base px-6 py-3 rounded-xl transition-all duration-300 ease-ted flex items-center justify-center gap-2">
+            <span>Explore 2026 Lineup</span>
+            <svg class="w-4 h-4 text-ted-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- COUNTDOWN TIMER TO DEC 2, 2026 -->
+        <div class="w-full max-w-xl bg-surface-2/90 border border-surface-5/90 rounded-2xl p-4 md:p-6 backdrop-blur-sm shadow-2xl mb-10">
+          <div class="text-xs uppercase tracking-widest text-textpalette-brownlight font-semibold mb-3">
+            Countdown to The Red Dot Stage • 09:00 AM IST
+          </div>
+          <div class="grid grid-cols-4 gap-2 md:gap-4">
+            <div class="bg-surface-3 rounded-xl p-2.5 md:p-3 border border-surface-5/50 flex flex-col items-center">
+              <span id="countdown-days" class="text-2xl md:text-4xl font-bold text-textpalette-white font-display">00</span>
+              <span class="text-xs text-textpalette-beigemuted mt-1">Days</span>
+            </div>
+            <div class="bg-surface-3 rounded-xl p-2.5 md:p-3 border border-surface-5/50 flex flex-col items-center">
+              <span id="countdown-hours" class="text-2xl md:text-4xl font-bold text-textpalette-white font-display">00</span>
+              <span class="text-xs text-textpalette-beigemuted mt-1">Hours</span>
+            </div>
+            <div class="bg-surface-3 rounded-xl p-2.5 md:p-3 border border-surface-5/50 flex flex-col items-center">
+              <span id="countdown-minutes" class="text-2xl md:text-4xl font-bold text-textpalette-white font-display">00</span>
+              <span class="text-xs text-textpalette-beigemuted mt-1">Minutes</span>
+            </div>
+            <div class="bg-surface-3 rounded-xl p-2.5 md:p-3 border border-surface-5/50 flex flex-col items-center">
+              <span id="countdown-seconds" class="text-2xl md:text-4xl font-bold text-ted-red font-display">00</span>
+              <span class="text-xs text-textpalette-beigemuted mt-1">Seconds</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROOF SIGNAL BAR -->
+        <div class="pt-2 border-t border-surface-5/60 w-full max-w-2xl flex flex-wrap items-center justify-around gap-4 text-center">
+          <div>
+            <div class="text-xl md:text-2xl font-bold text-textpalette-white">8th</div>
+            <div class="text-xs text-textpalette-brownlight font-medium">Annual Edition</div>
+          </div>
+          <div class="w-px h-8 bg-surface-5"></div>
+          <div>
+            <div class="text-xl md:text-2xl font-bold text-textpalette-white">48+</div>
+            <div class="text-xs text-textpalette-brownlight font-medium">Past Speakers</div>
+          </div>
+          <div class="w-px h-8 bg-surface-5"></div>
+          <div>
+            <div class="text-xl md:text-2xl font-bold text-textpalette-white">1,200</div>
+            <div class="text-xs text-textpalette-brownlight font-medium">Auditorium Seats</div>
+          </div>
+          <div class="w-px h-8 bg-surface-5"></div>
+          <div>
+            <div class="text-xl md:text-2xl font-bold text-textpalette-white">100%</div>
+            <div class="text-xs text-textpalette-brownlight font-medium">Student Organised</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MANDATORY TAGLINE REVEAL SECTION (B11) -->
+    <section id="theme" class="py-24 px-4 bg-surface-1 border-y border-surface-5 relative overflow-hidden">
+      <div class="max-w-4xl mx-auto text-center">
+        <span class="text-xs uppercase tracking-widest text-ted-red font-bold mb-3 block">
+          The 2026 Curatorial Theme
+        </span>
+        <h2 id="tagline-reveal-target" class="text-3xl md:text-5xl font-semibold text-textpalette-beigelight leading-tight max-w-[680px] mx-auto transition-all">
+          <span class="reveal-word">Bold</span> 
+          <span class="reveal-word">ideas</span> 
+          <span class="reveal-word">do</span> 
+          <span class="reveal-word">not</span> 
+          <span class="reveal-word">ignite</span> 
+          <span class="reveal-word">in</span> 
+          <span class="reveal-word">solitude.</span> 
+          <span class="reveal-word">They</span> 
+          <span class="reveal-word">spark</span> 
+          <span class="reveal-word">when</span> 
+          <span class="reveal-word">fearless</span> 
+          <span class="reveal-word">minds</span> 
+          <span class="reveal-word">collide</span> 
+          <span class="reveal-word">under</span> 
+          <span class="reveal-word">a</span> 
+          <span class="reveal-word">single</span> 
+          <span class="reveal-word text-ted-red">spotlight.</span>
+        </h2>
+        <p class="mt-6 text-base text-textpalette-brownlight max-w-xl mx-auto leading-relaxed">
+          At Vardhaman College of Engineering, TEDx is more than an auditorium gathering. It is an intellectual crucible where students, founders, and scientists dismantle conventional dogmas.
+        </p>
+      </div>
+    </section>
+
+    <!-- PRESENT YEAR (2026) HEADLINE SPEAKERS -->
+    <section id="present-speakers" class="py-24 px-4 max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-ted-red/15 border border-ted-red/30 text-ted-red text-xs font-semibold uppercase tracking-wider mb-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-ted-red"></span>
+            December 2, 2026 Lineup
+          </div>
+          <h2 class="text-3xl md:text-5xl font-bold text-textpalette-white tracking-tight">
+            2026 Headline Keynotes
+          </h2>
+          <p class="text-base text-textpalette-beigemuted mt-2 max-w-xl">
+            Meet the iconic entrepreneurs, disruptors, and pioneering innovators gracing the red dot carpet at Vardhaman this December.
+          </p>
+        </div>
+        <div class="mt-4 md:mt-0 flex items-center gap-2 text-xs text-textpalette-brownlight font-medium bg-surface-2 px-3.5 py-2 rounded-xl border border-surface-5">
+          <svg class="w-4 h-4 text-ted-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span>All 18-minute TED talk sessions followed by live Q&A</span>
+        </div>
+      </div>
+
+      <!-- PRESENT SPEAKERS GRID -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="present-speakers-container">
+        <!-- Injected via JavaScript for rich details -->
+      </div>
+    </section>
+
+    <!-- PAST TEDX SPEAKERS SECTION (SWIPE / SCROLL ARCHIVE) -->
+    <section id="past-speakers" class="py-24 px-4 bg-surface-1 border-t border-surface-5">
+      <div class="max-w-6xl mx-auto">
+        <div class="mb-10">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-3 border border-surface-5 text-xs font-semibold text-textpalette-beige mb-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            Official TEDxVCE Historical Archive
+          </div>
+          <h2 class="text-3xl md:text-5xl font-bold text-textpalette-white tracking-tight">
+            Past Speakers Featured at Vardhaman
+          </h2>
+          <p class="text-base text-textpalette-beigemuted mt-3 max-w-3xl leading-relaxed">
+            Distinguished thinkers, reformers, and creators who stood upon the red dot stage at Vardhaman College of Engineering across previous TEDxVCE editions, sharing transformative ideas with students and faculty.
+          </p>
+        </div>
+
+        <!-- CONTROLS ROW: SEARCH & CATEGORY PILLS -->
+        <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 mb-8">
+          <!-- SEARCH INPUT -->
+          <div class="relative w-full lg:max-w-md">
+            <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-textpalette-brown">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+            <input type="text" id="speaker-search-input" placeholder="Search TEDxVCE speakers (e.g. Jayaprakash, Bhagwat, Harika, Niharika)..." class="w-full bg-surface-2 border border-surface-5 rounded-xl pl-10 pr-4 py-2.5 text-sm text-textpalette-beigelight placeholder-textpalette-brownlight focus:outline-none focus:border-ted-red transition-colors">
+          </div>
+
+          <!-- CATEGORY & DOMAIN FILTER BUTTONS -->
+          <div class="flex items-center gap-2 overflow-x-auto pb-2 lg:pb-0 scrollbar-none shrink-0" id="year-filters">
+            <button class="filter-btn active-filter px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-surface-3 text-textpalette-white border border-surface-5 transition-all whitespace-nowrap shrink-0" data-filter="all">
+              All Alumni (8)
+            </button>
+            <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-surface-2 text-textpalette-beigemuted hover:text-textpalette-white border border-surface-5 transition-all whitespace-nowrap shrink-0" data-filter="Governance">
+              Governance & Reform
+            </button>
+            <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-surface-2 text-textpalette-beigemuted hover:text-textpalette-white border border-surface-5 transition-all whitespace-nowrap shrink-0" data-filter="Entrepreneurship">
+              Entrepreneurship
+            </button>
+            <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-surface-2 text-textpalette-beigemuted hover:text-textpalette-white border border-surface-5 transition-all whitespace-nowrap shrink-0" data-filter="Arts">
+              Arts & Philosophy
+            </button>
+            <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-surface-2 text-textpalette-beigemuted hover:text-textpalette-white border border-surface-5 transition-all whitespace-nowrap shrink-0" data-filter="Resilience">
+              Sports & Resilience
+            </button>
+            <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-surface-2 text-textpalette-beigemuted hover:text-textpalette-white border border-surface-5 transition-all whitespace-nowrap shrink-0" data-filter="Wellness">
+              Skills & Wellness
+            </button>
+          </div>
+        </div>
+
+        <!-- PAST SPEAKERS CARDS (INTERACTIVE MODAL TRIGGERS) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="past-speakers-container">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHEDULE & TIMELINE -->
+    <section id="schedule" class="py-24 px-4 max-w-5xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-widest text-ted-red font-bold mb-2 block">
+          Curated Flow
+        </span>
+        <h2 class="text-3xl md:text-4xl font-bold text-textpalette-white tracking-tight">
+          December 2, 2026 Schedule
+        </h2>
+        <p class="text-sm md:text-base text-textpalette-beigemuted mt-2">
+          An immersive single-day journey spanning technology, venture creation, high-resilience engineering, and human curiosity.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- ITEM 1 -->
+        <div class="bg-surface-2 border border-surface-5 hover:border-surface-6 rounded-2xl p-5 md:p-6 transition-all flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <span class="text-xs font-mono font-bold bg-surface-4 text-textpalette-beige px-3 py-1.5 rounded-lg">08:30 AM</span>
+            <div>
+              <h3 class="text-base font-semibold text-textpalette-white">Delegate Badge Collection & Morning Espresso</h3>
+              <p class="text-xs text-textpalette-beigemuted mt-0.5">Vardhaman Main Foyer • Welcome kit and networking booklet</p>
+            </div>
+          </div>
+          <span class="text-xs font-medium text-textpalette-brownlight bg-surface-3 px-3 py-1 rounded-full">Orientation</span>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="bg-surface-2 border border-ted-red/30 rounded-2xl p-5 md:p-6 transition-all flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-lg shadow-ted-red/5">
+          <div class="flex items-center gap-4">
+            <span class="text-xs font-mono font-bold bg-ted-red/20 text-ted-red px-3 py-1.5 rounded-lg">09:30 AM</span>
+            <div>
+              <h3 class="text-base font-semibold text-textpalette-white">Act I: Foundations of Audacity</h3>
+              <p class="text-xs text-textpalette-beigemuted mt-0.5">Opening remarks followed by Dr. Tessy Thomas & Aman Gupta</p>
+            </div>
+          </div>
+          <span class="text-xs font-medium text-ted-red bg-ted-red/10 px-3 py-1 rounded-full">Keynote Block</span>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="bg-surface-2 border border-surface-5 hover:border-surface-6 rounded-2xl p-5 md:p-6 transition-all flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <span class="text-xs font-mono font-bold bg-surface-4 text-textpalette-beige px-3 py-1.5 rounded-lg">12:30 PM</span>
+            <div>
+              <h3 class="text-base font-semibold text-textpalette-white">Networking Pavilion & Campus Luncheon</h3>
+              <p class="text-xs text-textpalette-beigemuted mt-0.5">Central Quadrangle • Curated roundtables between delegates and founders</p>
+            </div>
+          </div>
+          <span class="text-xs font-medium text-textpalette-brownlight bg-surface-3 px-3 py-1 rounded-full">Networking</span>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="bg-surface-2 border border-ted-red/30 rounded-2xl p-5 md:p-6 transition-all flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-lg shadow-ted-red/5">
+          <div class="flex items-center gap-4">
+            <span class="text-xs font-mono font-bold bg-ted-red/20 text-ted-red px-3 py-1.5 rounded-lg">02:00 PM</span>
+            <div>
+              <h3 class="text-base font-semibold text-textpalette-white">Act II: The Crucible of Scale</h3>
+              <p class="text-xs text-textpalette-beigemuted mt-0.5">Keynotes by Peyush Bansal, Ghazal Alagh, and Ashneer Grover</p>
+            </div>
+          </div>
+          <span class="text-xs font-medium text-ted-red bg-ted-red/10 px-3 py-1 rounded-full">Headline Session</span>
+        </div>
+
+        <!-- ITEM 5 -->
+        <div class="bg-surface-2 border border-surface-5 hover:border-surface-6 rounded-2xl p-5 md:p-6 transition-all flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <span class="text-xs font-mono font-bold bg-surface-4 text-textpalette-beige px-3 py-1.5 rounded-lg">05:00 PM</span>
+            <div>
+              <h3 class="text-base font-semibold text-textpalette-white">Open Microphone & Curators Valedictory</h3>
+              <p class="text-xs text-textpalette-beigemuted mt-0.5">Student innovator felicitations and certificate issuance</p>
+            </div>
+          </div>
+          <span class="text-xs font-medium text-textpalette-brownlight bg-surface-3 px-3 py-1 rounded-full">Closing</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKETS / PASSES SECTION -->
+    <section class="py-24 px-4 bg-surface-1 border-t border-surface-5">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center max-w-xl mx-auto mb-16">
+          <span class="text-xs uppercase tracking-widest text-ted-red font-bold mb-2 block">
+            Limited Seating
+          </span>
+          <h2 class="text-3xl md:text-4xl font-bold text-textpalette-white tracking-tight">
+            Reserve Your Delegate Pass
+          </h2>
+          <p class="text-sm md:text-base text-textpalette-beigemuted mt-2">
+            Per TEDx guidelines, attendance is strictly capped at 1,200 delegates. Passes are allotted on a rolling review basis.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- STUDENT PASS -->
+          <div class="bg-surface-2 border border-surface-5 rounded-2xl p-6 flex flex-col justify-between hover:border-surface-6 transition-all">
+            <div>
+              <div class="text-xs font-semibold text-textpalette-brownlight uppercase tracking-wider mb-2">Student Access</div>
+              <h3 class="text-xl font-bold text-textpalette-white">Student Delegate</h3>
+              <div class="mt-4 flex items-baseline gap-1">
+                <span class="text-3xl font-extrabold text-textpalette-white">₹499</span>
+                <span class="text-xs text-textpalette-beigemuted">/ pass</span>
+              </div>
+              <p class="text-xs text-textpalette-beigemuted mt-2">Valid College ID required at entry.</p>
+
+              <ul class="mt-6 space-y-3 text-xs text-textpalette-beigelight">
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-ted-red shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  Access to all 6 Keynotes & Talks
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-ted-red shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  Official TEDxVardhaman Swag Kit
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-ted-red shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  Buffet Lunch & High Tea
+                </li>
+              </ul>
+            </div>
+            <button class="mt-8 w-full select-tier-btn bg-surface-3 hover:bg-surface-4 text-textpalette-white border border-surface-5 py-2.5 rounded-xl text-sm font-semibold transition-all" data-tier="Student Delegate" data-price="499">
+              Select Student Tier
+            </button>
+          </div>
+
+          <!-- GENERAL PROFESSIONAL PASS -->
+          <div class="bg-surface-2 border-2 border-ted-red rounded-2xl p-6 flex flex-col justify-between relative shadow-2xl shadow-ted-red/10">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-ted-red text-white text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full">
+              Recommended Choice
+            </div>
+            <div>
+              <div class="text-xs font-semibold text-ted-red uppercase tracking-wider mb-2">Most Popular</div>
+              <h3 class="text-xl font-bold text-textpalette-white">General Delegate</h3>
+              <div class="mt-4 flex items-baseline gap-1">
+                <span class="text-3xl font-extrabold text-textpalette-white">₹999</span>
+                <span class="text-xs text-textpalette-beigemuted">/ pass</span>
+              </div>
+              <p class="text-xs text-textpalette-beigemuted mt-2">Open to professionals, innovators, and alumni.</p>
+
+              <ul class="mt-6 space-y-3 text-xs text-textpalette-beigelight">
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-ted-red shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  Priority Seating in Tier 1 Rows
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-ted-red shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  Access to Networking Pavilion
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-ted-red shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  Deluxe TEDx Kit + Certificate of Attendance
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-ted-red shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  Executive Lunch & Refreshments
+                </li>
+              </ul>
+            </div>
+            <button class="mt-8 w-full select-tier-btn bg-ted-red hover:bg-ted-darkred text-white py-2.5 rounded-xl text-sm font-semibold transition-all shadow-lg shadow-ted-red/25" data-tier="General Delegate" data-price="999">
+              Claim General Pass
+            </button>
+          </div>
+
+          <!-- VIP PATRON PASS -->
+          <div class="bg-surface-2 border border-surface-5 rounded-2xl p-6 flex flex-col justify-between hover:border-surface-6 transition-all">
+            <div>
+              <div class="text-xs font-semibold text-textpalette-brownlight uppercase tracking-wider mb-2">Exclusive</div>
+              <h3 class="text-xl font-bold text-textpalette-white">VIP Patron</h3>
+              <div class="mt-4 flex items-baseline gap-1">
+                <span class="text-3xl font-extrabold text-textpalette-white">₹2,499</span>
+                <span class="text-xs text-textpalette-beigemuted">/ pass</span>
+              </div>
+              <p class="text-xs text-textpalette-beigemuted mt-2">Reserved for angels, CXOs, and patrons.</p>
+
+              <ul class="mt-6 space-y-3 text-xs text-textpalette-beigelight">
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-ted-red shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  Front-Row VIP Reserved Seating
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-ted-red shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  Speaker Lounge & Private Tea Meet
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-ted-red shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  Signed Copies of Speakers Books
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-ted-red shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  Fast-Track Valet & Lounge Access
+                </li>
+              </ul>
+            </div>
+            <button class="mt-8 w-full select-tier-btn bg-surface-3 hover:bg-surface-4 text-textpalette-white border border-surface-5 py-2.5 rounded-xl text-sm font-semibold transition-all" data-tier="VIP Patron" data-price="2499">
+              Select VIP Tier
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAMPUS & VENUE SECTION -->
+    <section id="venue" class="py-24 px-4 max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-textpalette-brownlight font-bold mb-2 block">
+            The Venue
+          </span>
+          <h2 class="text-3xl md:text-4xl font-bold text-textpalette-white tracking-tight">
+            Vardhaman College of Engineering
+          </h2>
+          <p class="text-sm md:text-base text-textpalette-beigemuted mt-4 leading-relaxed">
+            Nestled across a lush green 25-acre campus in Shamshabad, Hyderabad, Vardhaman College of Engineering has championed technological excellence and entrepreneurial vigor since 1999.
+          </p>
+
+          <div class="mt-6 space-y-3">
+            <div class="flex items-start gap-3">
+              <div class="p-2 rounded-lg bg-surface-3 text-ted-red shrink-0 mt-0.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="text-sm font-semibold text-textpalette-white">Campus Location</h4>
+                <p class="text-xs text-textpalette-beigemuted">Kacharam, Shamshabad, Hyderabad, Telangana 501218 (Near Rajiv Gandhi International Airport)</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="p-2 rounded-lg bg-surface-3 text-ted-red shrink-0 mt-0.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="text-sm font-semibold text-textpalette-white">Transit Shuttles</h4>
+                <p class="text-xs text-textpalette-beigemuted">Complimentary event shuttles will operate from Miyapur Metro, Mehdipatnam, and LB Nagar junction starting at 07:15 AM.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-surface-2 border border-surface-5 rounded-2xl p-6 relative overflow-hidden">
+          <div class="flex items-center justify-between pb-4 border-b border-surface-5">
+            <div>
+              <span class="text-xs text-textpalette-brownlight uppercase font-semibold">Auditorium Specs</span>
+              <h3 class="text-lg font-bold text-textpalette-white">Kalam Convention Hall</h3>
+            </div>
+            <span class="text-xs bg-ted-red/20 text-ted-red px-2.5 py-1 rounded-md font-medium">Acoustic Rated</span>
+          </div>
+
+          <div class="py-6 space-y-3">
+            <div class="flex justify-between text-xs">
+              <span class="text-textpalette-beigemuted">Seating Capacity</span>
+              <span class="text-textpalette-white font-semibold">1,200 Tiered Seats</span>
+            </div>
+            <div class="flex justify-between text-xs">
+              <span class="text-textpalette-beigemuted">Display Matrix</span>
+              <span class="text-textpalette-white font-semibold">Dual 4K Laser Projection</span>
+            </div>
+            <div class="flex justify-between text-xs">
+              <span class="text-textpalette-beigemuted">Broadcast Facility</span>
+              <span class="text-textpalette-white font-semibold">Live TEDx YouTube Feed</span>
+            </div>
+            <div class="flex justify-between text-xs">
+              <span class="text-textpalette-beigemuted">Campus Accreditation</span>
+              <span class="text-textpalette-white font-semibold">NAAC A++ Grade</span>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-surface-5 flex items-center justify-between">
+            <a href="https://maps.google.com/?q=Vardhaman+College+of+Engineering+Shamshabad" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-ted-red hover:underline">
+              <span>Open in Google Maps</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
+            <span class="text-[11px] text-textpalette-brownlight">Coordinates: 17.2537° N, 78.3072° E</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION (ACCORDION) -->
+    <section id="faq" class="py-24 px-4 bg-surface-1 border-t border-surface-5">
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-12">
+          <span class="text-xs uppercase tracking-widest text-textpalette-brownlight font-bold mb-2 block">
+            Clarifications
+          </span>
+          <h2 class="text-3xl md:text-4xl font-bold text-textpalette-white tracking-tight">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-sm text-textpalette-beigemuted mt-2">
+            Everything you need to know about attending TEDxVardhaman on December 2, 2026.
+          </p>
+        </div>
+
+        <div class="space-y-3" id="faq-accordion">
+          <!-- FAQ 1 -->
+          <div class="faq-item bg-surface-2 border border-surface-5 rounded-xl overflow-hidden transition-all">
+            <button class="faq-toggle w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-semibold text-sm text-textpalette-white hover:text-ted-red transition-colors">
+              <span>Can students from colleges other than Vardhaman attend the event?</span>
+              <svg class="w-4 h-4 text-textpalette-brownlight transition-transform duration-300 transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="faq-content hidden px-5 pb-4 text-xs text-textpalette-beigemuted leading-relaxed">
+              Yes, absolutely. While TEDxVardhaman is hosted at Vardhaman College of Engineering, it is a globally licensed platform open to undergraduate students, researchers, startup founders, and innovators across India. A valid college or institutional ID is required for verification.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item bg-surface-2 border border-surface-5 rounded-xl overflow-hidden transition-all">
+            <button class="faq-toggle w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-semibold text-sm text-textpalette-white hover:text-ted-red transition-colors">
+              <span>Will attendees get an opportunity to interact directly with speakers like Ashneer Grover and Peyush Bansal?</span>
+              <svg class="w-4 h-4 text-textpalette-brownlight transition-transform duration-300 transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="faq-content hidden px-5 pb-4 text-xs text-textpalette-beigemuted leading-relaxed">
+              Yes. Each 18-minute TED talk is followed by a moderated question session. Additionally, VIP Patron pass holders have dedicated access to the speaker hospitality lounge during the luncheon and afternoon networking break.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item bg-surface-2 border border-surface-5 rounded-xl overflow-hidden transition-all">
+            <button class="faq-toggle w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-semibold text-sm text-textpalette-white hover:text-ted-red transition-colors">
+              <span>What is the dress code and protocol for entering the auditorium?</span>
+              <svg class="w-4 h-4 text-textpalette-brownlight transition-transform duration-300 transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="faq-content hidden px-5 pb-4 text-xs text-textpalette-beigemuted leading-relaxed">
+              We encourage smart casual or formal business attire. Due to professional audio recording requirements for the official TEDx YouTube archive, doors close promptly at 09:15 AM. Late arrivals will be accommodated only during designated applause intervals.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item bg-surface-2 border border-surface-5 rounded-xl overflow-hidden transition-all">
+            <button class="faq-toggle w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-semibold text-sm text-textpalette-white hover:text-ted-red transition-colors">
+              <span>Will meals and delegate merchandise kits be provided?</span>
+              <svg class="w-4 h-4 text-textpalette-brownlight transition-transform duration-300 transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="faq-content hidden px-5 pb-4 text-xs text-textpalette-beigemuted leading-relaxed">
+              Yes. All confirmed delegate passes include access to the campus luncheon, artisanal morning coffee, high tea refreshments, and an official TEDx commemorative kit containing a customized badge, journal, and event credentials.
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item bg-surface-2 border border-surface-5 rounded-xl overflow-hidden transition-all">
+            <button class="faq-toggle w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-semibold text-sm text-textpalette-white hover:text-ted-red transition-colors">
+              <span>What is the refund and pass transfer policy?</span>
+              <svg class="w-4 h-4 text-textpalette-brownlight transition-transform duration-300 transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="faq-content hidden px-5 pb-4 text-xs text-textpalette-beigemuted leading-relaxed">
+              Passes are fully refundable up to 72 hours before the event (November 29, 2026). In case you cannot attend, delegate name substitutions can be requested free of charge through our online portal until December 1, 2026.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-surface-0 border-t border-surface-5 py-16 px-4 text-xs text-textpalette-beigemuted">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+      <div class="md:col-span-2 space-y-3">
+        <div class="flex items-center gap-1.5">
+          <span class="text-textpalette-white font-bold text-xl tracking-tight">TED<span class="text-ted-red font-black text-2xl">x</span></span>
+          <span class="text-textpalette-beige font-semibold text-sm tracking-tight border-l border-surface-5 pl-2 ml-1">Vardhaman College of Engineering</span>
+        </div>
+        <p class="text-xs text-textpalette-brownlight max-w-md leading-relaxed">
+          In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience.
+        </p>
+        <p class="text-[11px] text-textpalette-brownlight">
+          This independent TEDx event is operated under license from TED.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold text-textpalette-white mb-3">Quick Navigation</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="#theme" class="hover:text-textpalette-white transition-colors">Theme & Philosophy</a></li>
+          <li><a href="#present-speakers" class="hover:text-textpalette-white transition-colors">2026 Keynote Speakers</a></li>
+          <li><a href="#past-speakers" class="hover:text-textpalette-white transition-colors">Past Speaker Archives</a></li>
+          <li><a href="#schedule" class="hover:text-textpalette-white transition-colors">Conference Itinerary</a></li>
+          <li><a href="#venue" class="hover:text-textpalette-white transition-colors">Vardhaman Campus Map</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold text-textpalette-white mb-3">Host Institution</h4>
+        <p class="text-xs text-textpalette-beigemuted leading-relaxed">
+          Vardhaman College of Engineering<br>
+          Autonomous Institute, Approved by AICTE<br>
+          Kacharam, Shamshabad, Hyderabad 501218<br>
+          Telangana, India
+        </p>
+        <div class="mt-3 text-xs text-textpalette-brownlight">
+          Contact: tedx@vardhaman.org
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto pt-8 border-t border-surface-5 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-textpalette-brownlight">
+      <div>
+        © 2026 TEDxVardhaman. All rights reserved.
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#" class="hover:text-textpalette-white transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-textpalette-white transition-colors">Code of Conduct</a>
+        <a href="#" class="hover:text-textpalette-white transition-colors">TED Guidelines</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE SPEAKER DETAIL MODAL -->
+  <div id="speaker-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300 ease-ted">
+    <div class="relative w-full max-w-2xl bg-surface-2 border border-surface-5 rounded-2xl p-6 md:p-8 max-h-[90vh] overflow-y-auto shadow-2xl transition-transform duration-300 scale-95" id="modal-card">
+      <!-- CLOSE BUTTON -->
+      <button id="close-modal-btn" class="absolute top-5 right-5 p-2 rounded-xl bg-surface-3 hover:bg-surface-4 text-textpalette-beigemuted hover:text-textpalette-white transition-colors" aria-label="Close speaker details">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+
+      <!-- MODAL CONTENT CONTAINER -->
+      <div id="modal-content">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- PASS REGISTRATION MODAL -->
+  <div id="pass-modal" role="dialog" aria-modal="true" aria-labelledby="pass-title" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300 ease-ted">
+    <div class="relative w-full max-w-lg bg-surface-2 border border-surface-5 rounded-2xl p-6 md:p-8 max-h-[90vh] overflow-y-auto shadow-2xl transition-transform duration-300 scale-95" id="pass-card">
+      <button id="close-pass-btn" class="absolute top-5 right-5 p-2 rounded-xl bg-surface-3 hover:bg-surface-4 text-textpalette-beigemuted hover:text-textpalette-white transition-colors" aria-label="Close pass registration">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+
+      <div id="pass-form-container">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="w-2 h-2 rounded-full bg-ted-red"></span>
+          <span class="text-xs uppercase font-bold tracking-widest text-ted-red">Official Registration</span>
+        </div>
+        <h3 class="text-2xl font-bold text-textpalette-white">Reserve Your TEDx Pass</h3>
+        <p class="text-xs text-textpalette-beigemuted mt-1 mb-6">Join us on December 2, 2026 at Vardhaman Auditorium.</p>
+
+        <form id="pass-form" class="space-y-4">
+          <div>
+            <label class="block text-xs font-semibold text-textpalette-beige mb-1" for="reg-name">Full Name *</label>
+            <input type="text" id="reg-name" required placeholder="e.g. Aditi Sharma" class="w-full bg-surface-3 border border-surface-5 rounded-xl px-4 py-2.5 text-sm text-textpalette-white focus:outline-none focus:border-ted-red transition-colors">
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-textpalette-beige mb-1" for="reg-email">Email Address *</label>
+            <input type="email" id="reg-email" required placeholder="aditi@example.com" class="w-full bg-surface-3 border border-surface-5 rounded-xl px-4 py-2.5 text-sm text-textpalette-white focus:outline-none focus:border-ted-red transition-colors">
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-textpalette-beige mb-1" for="reg-phone">Phone Number *</label>
+              <input type="tel" id="reg-phone" required placeholder="+91 98765 43210" class="w-full bg-surface-3 border border-surface-5 rounded-xl px-4 py-2.5 text-sm text-textpalette-white focus:outline-none focus:border-ted-red transition-colors">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-textpalette-beige mb-1" for="reg-tier">Pass Category</label>
+              <select id="reg-tier" class="w-full bg-surface-3 border border-surface-5 rounded-xl px-3 py-2.5 text-sm text-textpalette-white focus:outline-none focus:border-ted-red transition-colors">
+                <option value="General Delegate">General Delegate (₹999)</option>
+                <option value="Student Delegate">Student Delegate (₹499)</option>
+                <option value="VIP Patron">VIP Patron (₹2,499)</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-textpalette-beige mb-1" for="reg-org">College / Organization</label>
+            <input type="text" id="reg-org" placeholder="e.g. Vardhaman College of Engineering" class="w-full bg-surface-3 border border-surface-5 rounded-xl px-4 py-2.5 text-sm text-textpalette-white focus:outline-none focus:border-ted-red transition-colors">
+          </div>
+
+          <div class="pt-2">
+            <button type="submit" class="w-full bg-ted-red hover:bg-ted-darkred text-white font-semibold py-3 rounded-xl transition-all duration-300 ease-ted shadow-lg shadow-ted-red/25 active:scale-[0.98]">
+              Confirm Reservation
+            </button>
+          </div>
+          <p class="text-[11px] text-center text-textpalette-brownlight">
+            Guaranteed instant digital pass issuance & confirmation receipt.
+          </p>
+        </form>
+      </div>
+
+      <!-- SUCCESS CONFIRMATION BADGE (HIDDEN INITIALLY) -->
+      <div id="pass-success" class="hidden text-center py-6">
+        <div class="w-16 h-16 bg-ted-red/20 text-ted-red rounded-full flex items-center justify-center mx-auto mb-4 border border-ted-red/40">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+        </div>
+        <h4 class="text-2xl font-bold text-textpalette-white">Reservation Confirmed!</h4>
+        <p class="text-xs text-textpalette-beigemuted mt-2 max-w-sm mx-auto">
+          Your delegate badge for <span class="text-textpalette-white font-semibold">TEDxVardhaman 2026</span> has been reserved.
+        </p>
+
+        <!-- DIGITAL PASS PREVIEW TICKET -->
+        <div class="mt-6 p-4 rounded-xl bg-surface-3 border border-surface-5 text-left relative overflow-hidden">
+          <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-ted-red/10 rounded-full blur-xl pointer-events-none"></div>
+          <div class="flex justify-between items-center pb-3 border-b border-surface-5">
+            <div>
+              <span class="text-textpalette-white font-bold text-base">TED<span class="text-ted-red">x</span>Vardhaman</span>
+              <div class="text-[10px] text-textpalette-brownlight">Dec 2, 2026 • Hyderabad</div>
+            </div>
+            <span id="ticket-tier-badge" class="text-[10px] uppercase font-bold tracking-wider bg-ted-red/20 text-ted-red px-2.5 py-1 rounded">
+              Delegate
+            </span>
+          </div>
+          <div class="pt-3 space-y-1">
+            <div class="text-xs text-textpalette-white font-semibold" id="ticket-holder-name">Attendee Name</div>
+            <div class="text-[11px] text-textpalette-beigemuted" id="ticket-holder-org">Vardhaman College of Engineering</div>
+            <div class="text-[10px] font-mono text-textpalette-brownlight mt-2" id="ticket-reference-id">ID: TEDX-VCE-2026-8941</div>
+          </div>
+        </div>
+
+        <button id="download-pass-close" class="mt-6 bg-surface-3 hover:bg-surface-4 border border-surface-5 text-textpalette-white text-xs font-semibold px-6 py-2.5 rounded-xl transition-all">
+          Done
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
